@@ -1,2 +1,0 @@
-# Pneumonia-detection-in-X-Ray-images-using-SVM-and-ensemble-
-In this project, a classical approach of machine learning algorithms was used for implementation. This should serve as a good start as it provides simpler workflow pipelines and development, which in turn is easier to process by hardware. It is important to note that basic machine learning algorithms in this field are considered outdated given the huge advancements in the field of artificial intelligence. Deep learning models should prove more helpful in such cases.
