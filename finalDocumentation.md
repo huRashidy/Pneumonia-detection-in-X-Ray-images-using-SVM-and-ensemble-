@@ -10,7 +10,7 @@
 &rarr; `label = 1` corresponds to the "Normal" class.
   
 **Secondly** we make a simple plot to take a look at its distribution
-![data distribution](.main/img/skewed_data.png)
+![data distribution](https://files.catbox.moe/krd634.png)
 We can notice that the data is fairly biased to `Pneumonia`. This means a few things:
 * Results will inevitably be biased to Pneumonia.
 * Overfitting will eventually occur.
@@ -23,8 +23,7 @@ This can be solved in few ways:
     > Logically this seems like a good option, but may result in some overfitting to the available `Normal` features.
 
 Since our data is of type `image`, the data augmentation methods need to fit the image criteria:
-![data augmentation methods](.main/img/data_augmentation.png)
-
+![data augmentation methods][(https://files.catbox.moe/cj8g5y.png)]
 #### Data augmentation libraries
 1. _Augmentor_ &rarr; time consuming + high cpu usage
 2. _Albumentations_ &rarr; **_used_**
@@ -32,7 +31,7 @@ Since our data is of type `image`, the data augmentation methods need to fit the
 4. _AutoAugment_ (DeepAugment) &rarr; errors in importing dependencies
 
 #### Choice of number of PCA components
-![pca components](.main/img/pca_components_plot.png)
+![pca components](https://files.catbox.moe/5uzpz0.png)
 According to the cumulative sum plot of the obtained PCA components, we can see that the variance is almost a constant straight line after roughly 1500 components.  
 We picked `PCA(n_components = 1000)`
 
